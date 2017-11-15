@@ -1,0 +1,26 @@
+{
+    "name": "borobudur/exception",
+    "type": "library",
+    "description": "Borobudur Exception Component",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Iqbal Maulana",
+            "email": "iq.bluejack@gmail.com"
+        }
+    ],
+    "require": {
+        "borobudur/identifier": "~0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Borobudur\\Component\\Exception\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    }
+}
