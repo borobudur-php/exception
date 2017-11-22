@@ -57,11 +57,12 @@ class Exception extends BaseException
      */
     public function transformParams(array $params): array
     {
-        foreach ($params as &$key => $value) {
-            $key = '%' . $key . '%';
+        $newParams = [];
+        foreach ($params as $key => $value) {
+            $newParams['%' . $key . '%'] = $value;
         }
 
-        return $params;
+        return $newParams;
     }
 
     /**
